@@ -3,9 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-
-# Use Bootstrap for front end styling
-gem 'bootstrap', '~> 4.0.0'
+#USe Bootstrap for Styling and Layouts
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
