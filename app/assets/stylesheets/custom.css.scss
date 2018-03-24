@@ -22,11 +22,23 @@ $navbar-default-bg: #4286f4;
 }
 
 .jumbotron {
-    text-align: center;
-    background-image: url("https://cdn.wccftech.com/wp-content/uploads/2017/04/Ruby-on-Rails.png");
-    background-repeat: no-repeat;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
+    background: #d0e4f7;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea', GradientType=0);
+    /* IE6-9 */
     background-size: cover;
-    width: 640px;
-    height: 320px;
+    background-repeat: no-repeat;
+    color: #fff;
 
+}
+
+.center {
+    text-align: center;
 }
