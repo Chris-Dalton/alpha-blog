@@ -42,10 +42,12 @@ $navbar-default-bg: #4286f4;
 .center {
     text-align: center;
 }
-.footer{
-  margin-top: 50px;
+
+.footer {
+    margin-top: 50px;
+    border-top: 1px solid #A9A9A9;
 }
-.footer nav{
-  position: absolute;
-  display: inline-block;
+
+.footer ul a {
+    float: right;
 }
