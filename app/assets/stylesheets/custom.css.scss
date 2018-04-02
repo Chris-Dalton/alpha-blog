@@ -1,7 +1,5 @@
 $navbar-default-bg: #4286f4;
 
-
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -39,6 +37,11 @@ $navbar-default-bg: #4286f4;
 
 }
 
+.article_space {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 .center {
     text-align: center;
 }
@@ -50,4 +53,17 @@ $navbar-default-bg: #4286f4;
 
 .footer ul a {
     float: right;
+}
+
+.article-actions {
+
+
+    padding-top: 5px;
+
+}
+
+.description {
+
+    margin-top: 0;
+
 }

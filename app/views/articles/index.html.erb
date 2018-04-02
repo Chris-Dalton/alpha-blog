@@ -1,24 +1,26 @@
 <h2 class="center">Articles</h2>
-<h3 class="center">Here are the following saved articles.</h3>
-<table class="table table-condensed">
-    <tr>
-        <th>Title</th>
-        <th>Description</th>
-    </tr>
-    
-    <% @articles.each do |article| %>
-    
-    <tr class="table-striped">
-        <td><%= article.title %></td>
-        <td><%= article.description %></td>
-    
-        <td><%= link_to "Show", article_path(article), class: "btn btn-primary" %></td>
-        <td><%= link_to "Edit", edit_article_path(article), class: "btn btn-primary" %></td>
-        <td><%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure"}, class: "btn btn-primary" %></td>
-    </tr>
-    <%end%>
-    
-</table>
-
-<%= link_to "Create New Article", new_article_path %>
-<%= link_to "Back", "javascript:history.back()" %>
+<h6 class="center">Here are the following saved articles.</h6>
+<div class="well">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <% @articles.each do |article| %>
+        
+        <tr>
+            <td><%= article.title %></td>
+            <td><%= article.description %></td>
+        
+            <td><%= link_to "Show", article_path(article), class: "btn btn-success" %></td>
+            <td><%= link_to "Edit", edit_article_path(article), class: "btn btn-primary" %></td>
+            <td><%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %></td>
+        </tr>
+        <%end%>
+        
+    </table>
+</div>
+<%= link_to "Create New Article", new_article_path, class: "btn btn-primary" %>
+<%= link_to "Cancel", "javascript:history.back()", class: "btn btn-danger" %>
