@@ -1,12 +1,9 @@
 <h2 class="center"><%=@article.title%></h2>
 <div class="well col-xs-8 col-xs-offset-2">
     <%= simple_format(@article.description) %>
+    <hr>
+    <div class="center">
+        <%= render "article_actions" %>
+    </div>
 
-<hr>
-<div class="article-actions">
-    <%= link_to "Edit", edit_article_path(@article), class: "btn btn-primary btn-xs" %>
-    <%= link_to "See All Articles", articles_path, class: "btn btn-success btn-xs" %>
-    <%= link_to "Delete", article_path(@article), method: :delete, 
-        data: {confirm: "Are you sure?"}, class: "btn btn-danger btn-xs" %>
-</div>
 </div>
